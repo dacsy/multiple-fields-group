@@ -1,0 +1,9 @@
+<div class="multiple-fields-group">
+    <h1>Transculde list</h1>
+    <button ng-click="addTopRow()">Add</button>
+    <div class="row" ng-repeat="item in objects track by $index">
+        <div class="transclude" ng-transclude></div> 
+        <button class="my-button" ng-click = "removeThisItem(item, $index)"> Remove </button>
+        </div>
+    <button ng-click="addRow()">Add</button>
+</div>
